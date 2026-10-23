@@ -10,18 +10,18 @@ Source pages: https://nguyenvanlamm.github.io/snowpack-hop-site/ · https://nguy
 
 URL: https://nguyenvanlamm.github.io/snowpack-hop-site/
 
-Tuck the fox runs on his own through a snowy twilight. Tap to hop, hold to hop higher, and pack every critter you stomp into a snow block you can stand on.
+A one-tap fox platformer for iPhone. Tuck runs on his own. Tap to hop, hold to hop higher, and stomp critters into snow blocks you can climb.
 
-**Coming soon to the App Store.**
+**Coming soon to the App Store.** Bookmark this page: the App Store link appears here on launch day.
 
 At a glance: free first world · no ads · no account · plays offline.
 
 ### Every critter is a step
 
-Stomp a frostmite and it packs into a solid block of snow right where it stood. Some walls are too high to jump, so the critters are your stairs.
+Some walls are too high to jump. The critters are your stairs.
 
 - **Pick your step.** Choose which critter to stomp and where. A block in the wrong place is a step to nowhere.
-- **New tricks each world.** Waddlers, hoppers that leave blocks in the air, gliders, and spiky critters you cannot stomp at all.
+- **New tricks each world.** World 1 has waddlers and hoppers. Later worlds add gliders, blocks in mid-air, and spiky critters you cannot stomp.
 - **Lanterns save your spot.** Light a lantern on the trail and a fall sends you back there, not to the start.
 
 ### How to play
@@ -35,30 +35,28 @@ One thumb, a few minutes a level, a lit cabin at the end.
 ### What you get
 
 - **36 levels, 3 worlds.** Pinefall, Frostridge and Aurora Peak, each longer and trickier than the last.
-- **Three snowflakes a level.** Reach the cabin, find all three mittens, and finish without a fall.
-- **Two helpers.** A Snow Globe rewinds three seconds after a fall. A Cozy Scarf shields you from one bump. Glints you collect trade for both.
+- **Three snowflakes a level.** Earn one for each: reach the cabin, find the three hidden mittens, and finish without a fall.
+- **Two helpers.** A Snow Globe rewinds three seconds after a fall. A Cozy Scarf shields you from one bump. Earn both in play, or trade glints for them: the shiny bits you pick up in levels.
 
-### Fair pricing
+### Pricing
 
-No ads, no subscriptions, no timers.
+No subscriptions, no timers.
 
-- **World 1: Free.** 12 levels and every mechanic, to see if you like it.
-- **All Worlds: $3.99.** One time. Opens Frostridge and Aurora Peak: 24 more levels.
-- **Booster packs: $0.99 / $2.99.** Optional: 5 or 15 Snow Globes and Cozy Scarves. You can also earn them with glints, so they never block a level.
+- **World 1: Free.** 12 full levels to learn tap, hold, stomp and climb, to see if you like it.
+- **All Worlds: $3.99.** One time. Opens Frostridge and Aurora Peak: 24 more levels with gliders, mid-air blocks and spiky critters.
+- **Booster packs: $0.99 / $2.99.** Optional: 5 or 15 Snow Globes and Cozy Scarves. You can also earn them in play, so they never block a level.
 
-No account, no tracking, no analytics. Your progress stays on your phone.
+Your progress stays on your phone.
 
 ### Questions
 
+**When can I play it?** Snowpack Hop is coming soon to the App Store for iPhone. The download link will appear at the top of this page on launch day.
+
+**Which devices?** iPhone only. It is played in portrait with one hand.
+
 **Does it work offline?** Yes. Every level plays without a connection. The App Store is used only when you buy something or restore a purchase.
 
-**Are there ads?** No. There are no ads and no ad networks.
-
-**What does it cost?** World 1 is free. All Worlds is a one-time $3.99. Booster packs are optional, and boosters can also be earned in play.
-
 **What data do you collect?** None. There is no account, and progress is saved on your device only.
-
-**Which devices?** iPhone. It is played in portrait with one hand.
 
 ---
 
@@ -66,13 +64,21 @@ No account, no tracking, no analytics. Your progress stays on your phone.
 
 URL: https://nguyenvanlamm.github.io/snowpack-hop-site/support.html
 
+Help for Snowpack Hop on iPhone. We answer by email.
+
 ### Contact
 
 Write to lamnv260398@gmail.com. Please say which device you play on and, if it is about a level, its number.
 
 ### How to play
 
-Tuck runs to the right on his own. Tap anywhere to hop; keep your finger down to hop higher. Land on a frostmite to stomp it: it packs into a snow block where it stood, and you can stand on that block to reach ledges and walls too high to jump. Spiky critters cannot be stomped. Lanterns on the trail save your spot. Each level has three snowflakes: reach the cabin, find all three mittens, and finish without a fall. From level 5, a Snow Globe rewinds three seconds after a fall, and the scarf button puts on a Cozy Scarf that shields you from one bump.
+- Tuck runs to the right on his own. Tap anywhere to hop; hold to hop higher.
+- Land on a critter to stomp it. It packs into a snow block you can stand on to reach ledges and walls too high to jump.
+- Spiky critters cannot be stomped.
+- Lanterns on the trail save your spot.
+- Each level has three snowflakes: reach the cabin, find all three mittens, and finish without a fall.
+- From level 5, a Snow Globe rewinds three seconds after a fall, and the scarf button puts on a Cozy Scarf that shields you from one bump.
+- Glints are the shiny bits you pick up in levels. Trade them for Snow Globes and Cozy Scarves in the Shop.
 
 ### Purchases
 
