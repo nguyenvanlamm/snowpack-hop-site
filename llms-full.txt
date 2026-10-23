@@ -1,0 +1,120 @@
+# Snowpack Hop
+
+> The full text of the Snowpack Hop website (home, support and privacy pages) in one Markdown file. Snowpack Hop is a one-tap auto-runner platformer for iPhone by Nguyen Van Lam. Coming soon to the App Store.
+
+Source pages: https://nguyenvanlamm.github.io/snowpack-hop-site/ · https://nguyenvanlamm.github.io/snowpack-hop-site/support.html · https://nguyenvanlamm.github.io/snowpack-hop-site/privacy.html
+
+---
+
+## Home: Stomp the snow critters. Build your way up.
+
+URL: https://nguyenvanlamm.github.io/snowpack-hop-site/
+
+Tuck the fox runs on his own through a snowy twilight. Tap to hop, hold to hop higher, and pack every critter you stomp into a snow block you can stand on.
+
+**Coming soon to the App Store.**
+
+At a glance: free first world · no ads · no account · plays offline.
+
+### Every critter is a step
+
+Stomp a frostmite and it packs into a solid block of snow right where it stood. Some walls are too high to jump, so the critters are your stairs.
+
+- **Pick your step.** Choose which critter to stomp and where. A block in the wrong place is a step to nowhere.
+- **New tricks each world.** Waddlers, hoppers that leave blocks in the air, gliders, and spiky critters you cannot stomp at all.
+- **Lanterns save your spot.** Light a lantern on the trail and a fall sends you back there, not to the start.
+
+### How to play
+
+One thumb, a few minutes a level, a lit cabin at the end.
+
+1. **Tap to hop.** Tuck runs on his own. Touch anywhere to jump.
+2. **Hold to go higher.** Keep your finger down for a longer, higher hop over gaps and ledges.
+3. **Stomp and climb.** Land on a critter, then use the block it leaves to reach the next ledge.
+
+### What you get
+
+- **36 levels, 3 worlds.** Pinefall, Frostridge and Aurora Peak, each longer and trickier than the last.
+- **Three snowflakes a level.** Reach the cabin, find all three mittens, and finish without a fall.
+- **Two helpers.** A Snow Globe rewinds three seconds after a fall. A Cozy Scarf shields you from one bump. Glints you collect trade for both.
+
+### Fair pricing
+
+No ads, no subscriptions, no timers.
+
+- **World 1: Free.** 12 levels and every mechanic, to see if you like it.
+- **All Worlds: $3.99.** One time. Opens Frostridge and Aurora Peak: 24 more levels.
+- **Booster packs: $0.99 / $2.99.** Optional: 5 or 15 Snow Globes and Cozy Scarves. You can also earn them with glints, so they never block a level.
+
+No account, no tracking, no analytics. Your progress stays on your phone.
+
+### Questions
+
+**Does it work offline?** Yes. Every level plays without a connection. The App Store is used only when you buy something or restore a purchase.
+
+**Are there ads?** No. There are no ads and no ad networks.
+
+**What does it cost?** World 1 is free. All Worlds is a one-time $3.99. Booster packs are optional, and boosters can also be earned in play.
+
+**What data do you collect?** None. There is no account, and progress is saved on your device only.
+
+**Which devices?** iPhone. It is played in portrait with one hand.
+
+---
+
+## Snowpack Hop Support
+
+URL: https://nguyenvanlamm.github.io/snowpack-hop-site/support.html
+
+### Contact
+
+Write to lamnv260398@gmail.com. Please say which device you play on and, if it is about a level, its number.
+
+### How to play
+
+Tuck runs to the right on his own. Tap anywhere to hop; keep your finger down to hop higher. Land on a frostmite to stomp it: it packs into a snow block where it stood, and you can stand on that block to reach ledges and walls too high to jump. Spiky critters cannot be stomped. Lanterns on the trail save your spot. Each level has three snowflakes: reach the cabin, find all three mittens, and finish without a fall. From level 5, a Snow Globe rewinds three seconds after a fall, and the scarf button puts on a Cozy Scarf that shields you from one bump.
+
+### Purchases
+
+World 1 is free. All Worlds ($3.99, one time) opens worlds 2 and 3. The Globe Pouch ($0.99) and Globe Chest ($2.99) add 5 or 15 Snow Globes and Cozy Scarves; you can also trade glints for them in the Shop. Bought something before, or on another device with the same store account? Open Settings → Restore Purchases (also in the Shop). Booster packs are used up when spent and cannot be restored.
+
+### Progress
+
+Progress is saved on the device only. It is not synced between devices, and it is removed if you delete the app.
+
+---
+
+## Snowpack Hop Privacy Policy
+
+URL: https://nguyenvanlamm.github.io/snowpack-hop-site/privacy.html
+
+Last updated 23 October 2026.
+
+Snowpack Hop is a platform game. It does not ask who you are, and it does not sell any data about you.
+
+### What stays on your device
+
+- Your progress: the snowflakes earned in each level, your best glint count per level, and your Snow Globes, Cozy Scarves and glints.
+- Your settings: whether vibration is on.
+- Whether you have bought All Worlds, and which store purchases were already delivered (so a purchase is never counted twice).
+
+This is stored on your device only. Deleting the app removes it.
+
+### What we do not do
+
+- No account or sign-in.
+- No advertising and no ad networks.
+- No analytics, crash reporting or tracking of any kind.
+- No access to your contacts, photos, location, camera or microphone.
+
+### Purchases
+
+World 1 is free. All Worlds and the booster packs are bought through the App Store, which handles payment under its own privacy policy. We receive no payment details; the game only learns from the store which purchases exist.
+
+### Children
+
+The game collects no personal information from anyone, including children.
+
+### Changes
+
+If this policy changes, the new version will be posted on this page with a new date.

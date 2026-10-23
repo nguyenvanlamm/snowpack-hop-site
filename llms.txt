@@ -1,0 +1,20 @@
+# Snowpack Hop
+
+> Snowpack Hop is a one-tap auto-runner platformer for iPhone (portrait, one hand). Tuck, a small orange fox, runs on his own through a snowy twilight: tap to hop, hold to hop higher. Stomp a frostmite critter and it packs into a solid snow block you can stand on to climb walls too high to jump. Coming soon to the App Store.
+
+- Campaign: 36 levels in 3 worlds (Pinefall, Frostridge, Aurora Peak). Each level has 3 snowflakes: reach the cabin, find all three mittens, and finish without a fall. Lanterns on the trail save your spot.
+- Critters: waddlers, hoppers that leave blocks in the air, gliders, and spiky critters that cannot be stomped.
+- Helpers: a Snow Globe rewinds three seconds after a fall; a Cozy Scarf shields you from one bump. Glints collected in play trade for both.
+- Pricing: World 1 (12 levels) is free. All Worlds is a one-time $3.99 purchase that opens Frostridge and Aurora Peak. Booster packs (Globe Pouch $0.99, Globe Chest $2.99) are optional. Restore Purchases is in Settings and the Shop.
+- Privacy: no ads, no account, no analytics or tracking, no data collected. Progress is stored on the device only, and the game plays offline. The game is in English.
+- Made by Nguyen Van Lam.
+
+## Pages
+
+- [Home](https://nguyenvanlamm.github.io/snowpack-hop-site/): what the game is, how to play, worlds, pricing and questions
+- [Support](https://nguyenvanlamm.github.io/snowpack-hop-site/support.html): contact, how to play, purchases and restoring them, progress
+- [Privacy Policy](https://nguyenvanlamm.github.io/snowpack-hop-site/privacy.html): what the game stores on the device and what it never collects
+
+## Optional
+
+- [Full text](https://nguyenvanlamm.github.io/snowpack-hop-site/llms-full.txt): all three pages in one Markdown file
