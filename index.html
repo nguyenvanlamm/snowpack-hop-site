@@ -48,7 +48,7 @@
       "@id": "https://nguyenvanlamm.github.io/snowpack-hop-site/#game",
       "name": "Snowpack Hop",
       "alternativeHeadline": "Stomp the snow critters. Build your way up.",
-      "description": "A one-tap auto-runner platformer for iPhone. Tuck, a small orange fox, runs on his own: tap to hop, hold to hop higher. Stomp a frostmite critter and it packs into a solid snow block you can stand on to climb walls. 36 levels in 3 worlds (Pinefall, Frostridge, Aurora Peak), 3 snowflakes per level. World 1 is free; All Worlds is a one-time $3.99 purchase; booster packs are optional. No ads, no account, no data collected, plays offline. Coming soon to the App Store.",
+      "description": "A one-tap auto-runner platformer for iPhone. Tuck, a small orange fox, runs on his own: tap to hop, hold to hop higher. Stomp a critter and it packs into a solid snow block you can stand on to climb walls. 36 levels in 3 worlds (Pinefall, Frostridge, Aurora Peak), 3 snowflakes per level. World 1 is free; All Worlds is a one-time $3.99 purchase; booster packs are optional. No ads, no account, no data collected, plays offline. Coming soon to the App Store.",
       "url": "https://nguyenvanlamm.github.io/snowpack-hop-site/",
       "image": "https://nguyenvanlamm.github.io/snowpack-hop-site/assets/img/og.png",
       "thumbnailUrl": "https://nguyenvanlamm.github.io/snowpack-hop-site/assets/img/icon-256.png",
@@ -73,11 +73,10 @@
       "isPartOf": { "@id": "https://nguyenvanlamm.github.io/snowpack-hop-site/#website" },
       "about": { "@id": "https://nguyenvanlamm.github.io/snowpack-hop-site/#game" },
       "mainEntity": [
+        { "@type": "Question", "name": "When can I play it?", "acceptedAnswer": { "@type": "Answer", "text": "Snowpack Hop is coming soon to the App Store for iPhone. The download link will appear at the top of this page on launch day." } },
+        { "@type": "Question", "name": "Which devices?", "acceptedAnswer": { "@type": "Answer", "text": "iPhone only. It is played in portrait with one hand." } },
         { "@type": "Question", "name": "Does it work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every level plays without a connection. The App Store is used only when you buy something or restore a purchase." } },
-        { "@type": "Question", "name": "Are there ads?", "acceptedAnswer": { "@type": "Answer", "text": "No. There are no ads and no ad networks." } },
-        { "@type": "Question", "name": "What does it cost?", "acceptedAnswer": { "@type": "Answer", "text": "World 1 is free. All Worlds is a one-time $3.99. Booster packs are optional, and boosters can also be earned in play." } },
-        { "@type": "Question", "name": "What data do you collect?", "acceptedAnswer": { "@type": "Answer", "text": "None. There is no account, and progress is saved on your device only." } },
-        { "@type": "Question", "name": "Which devices?", "acceptedAnswer": { "@type": "Answer", "text": "iPhone. It is played in portrait with one hand." } }
+        { "@type": "Question", "name": "What data do you collect?", "acceptedAnswer": { "@type": "Answer", "text": "None. There is no account, and progress is saved on your device only." } }
       ]
     }
   ]
@@ -109,8 +108,11 @@
   .brand span { font: 700 22px Fredoka, sans-serif; }
   .hero h1 { font-size: clamp(36px, 7vw, 60px); margin: 22px 0 14px; text-shadow: 0 3px 0 var(--ink); }
   .hero p.sub { font-size: 19px; max-width: 34em; margin: 0 0 22px; }
-  .soon { display: inline-block; margin: 0; padding: 14px 24px; border-radius: 999px; background: var(--fox); color: #fff;
-    font: 700 20px Fredoka, sans-serif; border: 3px solid var(--ink); box-shadow: 0 5px 0 var(--ink); }
+  /* A status badge, not a button: flat ink chip with a dashed edge (no drop shadow) and a mint "on its way" dot. */
+  .soon { display: inline-flex; align-items: center; gap: 10px; margin: 0; padding: 9px 16px; border-radius: 14px;
+    background: var(--ink); color: #fff; font: 700 17px Fredoka, sans-serif; border: 2px dashed rgba(255, 244, 214, .7); }
+  .soon::before { content: ""; flex: none; width: 10px; height: 10px; border-radius: 50%; background: var(--mint); }
+  .next { margin: 10px 0 0; font-size: 16px; max-width: 30em; text-wrap: balance; }
   .trust { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; margin: 20px 0 0; font-size: 15px; }
   .trust li::before { content: "❄ "; color: var(--cream); }
   .phones { display: flex; gap: 14px; justify-content: center; align-items: flex-end; padding-bottom: 0; }
@@ -147,7 +149,6 @@
     .cards { grid-template-columns: repeat(3, 1fr); }
     .price { grid-template-columns: repeat(3, 1fr); }
   }
-  @media (prefers-reduced-motion: no-preference) { .soon { transition: transform .15s; } }
 </style>
 </head>
 <body>
@@ -156,8 +157,9 @@
     <div>
       <div class="brand"><img src="assets/img/icon-256.png" alt="" width="64" height="64"><span>Snowpack Hop</span></div>
       <h1>Stomp the snow critters. Build your way up.</h1>
-      <p class="sub">Tuck the fox runs on his own through a snowy twilight. Tap to hop, hold to hop higher, and pack every critter you stomp into a snow block you can stand on.</p>
+      <p class="sub">A one-tap fox platformer for iPhone. Tuck runs on his own. Tap to hop, hold to hop higher, and stomp critters into snow blocks you can climb.</p>
       <p class="soon">Coming soon to the App Store</p>
+      <p class="next">Bookmark this page: the App Store link appears here on launch day.</p>
       <ul class="trust" aria-label="At a glance">
         <li>Free first world</li><li>No ads</li><li>No account</li><li>Plays offline</li>
       </ul>
@@ -175,10 +177,10 @@
   <section class="twist">
     <div class="wrap">
       <h2>Every critter is a step</h2>
-      <p class="lead">Stomp a frostmite and it packs into a solid block of snow right where it stood. Some walls are too high to jump, so the critters are your stairs.</p>
+      <p class="lead">Some walls are too high to jump. The critters are your stairs.</p>
       <div class="cards">
         <div class="card"><h3>Pick your step</h3><p>Choose which critter to stomp and where. A block in the wrong place is a step to nowhere.</p></div>
-        <div class="card"><h3>New tricks each world</h3><p>Waddlers, hoppers that leave blocks in the air, gliders, and spiky critters you cannot stomp at all.</p></div>
+        <div class="card"><h3>New tricks each world</h3><p>World 1 has waddlers and hoppers. Later worlds add gliders, blocks in mid-air, and spiky critters you cannot stomp.</p></div>
         <div class="card"><h3>Lanterns save your spot</h3><p>Light a lantern on the trail and a fall sends you back there, not to the start.</p></div>
       </div>
     </div>
@@ -201,36 +203,35 @@
       <h2>What you get</h2>
       <div class="cards">
         <div class="card"><h3>36 levels, 3 worlds</h3><p>Pinefall, Frostridge and Aurora Peak, each longer and trickier than the last.</p></div>
-        <div class="card"><h3>Three snowflakes a level</h3><p>Reach the cabin, find all three mittens, and finish without a fall.</p></div>
-        <div class="card"><h3>Two helpers</h3><p>A Snow Globe rewinds three seconds after a fall. A Cozy Scarf shields you from one bump. Glints you collect trade for both.</p></div>
+        <div class="card"><h3>Three snowflakes a level</h3><p>Earn one for each: reach the cabin, find the three hidden mittens, and finish without a fall.</p></div>
+        <div class="card"><h3>Two helpers</h3><p>A Snow Globe rewinds three seconds after a fall. A Cozy Scarf shields you from one bump. Earn both in play, or trade glints for them: the shiny bits you pick up in levels.</p></div>
       </div>
     </div>
   </section>
 
   <section class="twist" id="pricing">
     <div class="wrap">
-      <h2>Fair pricing</h2>
-      <p class="lead">No ads, no subscriptions, no timers.</p>
+      <h2>Pricing</h2>
+      <p class="lead">No subscriptions, no timers.</p>
       <div class="price">
-        <div class="card free"><h3>World 1</h3><b>Free</b><p>12 levels and every mechanic, to see if you like it.</p></div>
-        <div class="card"><h3>All Worlds</h3><b>$3.99</b><p>One time. Opens Frostridge and Aurora Peak: 24 more levels.</p></div>
-        <div class="card"><h3>Booster packs</h3><b>$0.99 / $2.99</b><p>Optional: 5 or 15 Snow Globes and Cozy Scarves. You can also earn them with glints, so they never block a level.</p></div>
+        <div class="card free"><h3>World 1</h3><b>Free</b><p>12 full levels to learn tap, hold, stomp and climb, to see if you like it.</p></div>
+        <div class="card"><h3>All Worlds</h3><b>$3.99</b><p>One time. Opens Frostridge and Aurora Peak: 24 more levels with gliders, mid-air blocks and spiky critters.</p></div>
+        <div class="card"><h3>Booster packs</h3><b>$0.99 / $2.99</b><p>Optional: 5 or 15 Snow Globes and Cozy Scarves. You can also earn them in play, so they never block a level.</p></div>
       </div>
     </div>
   </section>
 
   <section class="privacy">
-    <div class="wrap"><p>No account, no tracking, no analytics. Your progress stays on your phone. <a href="privacy.html">Privacy Policy</a></p></div>
+    <div class="wrap"><p>Your progress stays on your phone. <a href="privacy.html">Privacy Policy</a></p></div>
   </section>
 
   <section style="padding-top: 0">
     <div class="wrap">
       <h2>Questions</h2>
+      <details><summary>When can I play it?</summary><p>Snowpack Hop is coming soon to the App Store for iPhone. The download link will appear at the top of this page on launch day.</p></details>
+      <details><summary>Which devices?</summary><p>iPhone only. It is played in portrait with one hand.</p></details>
       <details><summary>Does it work offline?</summary><p>Yes. Every level plays without a connection. The App Store is used only when you buy something or restore a purchase.</p></details>
-      <details><summary>Are there ads?</summary><p>No. There are no ads and no ad networks.</p></details>
-      <details><summary>What does it cost?</summary><p>World 1 is free. All Worlds is a one-time $3.99. Booster packs are optional, and boosters can also be earned in play.</p></details>
       <details><summary>What data do you collect?</summary><p>None. There is no account, and progress is saved on your device only.</p></details>
-      <details><summary>Which devices?</summary><p>iPhone. It is played in portrait with one hand.</p></details>
     </div>
   </section>
 </main>

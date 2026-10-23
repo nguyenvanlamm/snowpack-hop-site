@@ -1,11 +1,12 @@
 # Snowpack Hop
 
-> Snowpack Hop is a one-tap auto-runner platformer for iPhone (portrait, one hand). Tuck, a small orange fox, runs on his own through a snowy twilight: tap to hop, hold to hop higher. Stomp a frostmite critter and it packs into a solid snow block you can stand on to climb walls too high to jump. Coming soon to the App Store.
+> Snowpack Hop is a one-tap auto-runner platformer for iPhone (portrait, one hand). Tuck, a small orange fox, runs on his own through a snowy twilight: tap to hop, hold to hop higher. Stomp a critter and it packs into a solid snow block you can stand on to climb walls too high to jump. Coming soon to the App Store.
 
 - Campaign: 36 levels in 3 worlds (Pinefall, Frostridge, Aurora Peak). Each level has 3 snowflakes: reach the cabin, find all three mittens, and finish without a fall. Lanterns on the trail save your spot.
-- Critters: waddlers, hoppers that leave blocks in the air, gliders, and spiky critters that cannot be stomped.
-- Helpers: a Snow Globe rewinds three seconds after a fall; a Cozy Scarf shields you from one bump. Glints collected in play trade for both.
-- Pricing: World 1 (12 levels) is free. All Worlds is a one-time $3.99 purchase that opens Frostridge and Aurora Peak. Booster packs (Globe Pouch $0.99, Globe Chest $2.99) are optional. Restore Purchases is in Settings and the Shop.
+- Critters: World 1 has waddlers and hoppers. Later worlds add gliders, hoppers that leave blocks in mid-air, and spiky critters (spikebacks) that cannot be stomped.
+- Helpers: a Snow Globe rewinds three seconds after a fall; a Cozy Scarf shields you from one bump. Both can be earned in play or traded for glints, the shiny bits picked up in levels.
+- Pricing: World 1 (12 levels) is free. All Worlds is a one-time $3.99 purchase that opens Frostridge and Aurora Peak (24 more levels). Booster packs (Globe Pouch $0.99, Globe Chest $2.99) are optional. Restore Purchases is in Settings and the Shop.
+- Release: coming soon to the App Store for iPhone. The download link will appear on the home page on launch day.
 - Privacy: no ads, no account, no analytics or tracking, no data collected. Progress is stored on the device only, and the game plays offline. The game is in English.
 - Made by Nguyen Van Lam.
 
