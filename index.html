@@ -10,6 +10,7 @@
 <link rel="canonical" href="https://nguyenvanlamm.github.io/snowpack-hop-site/">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/fredoka_bold.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Snowpack Hop">
 <meta property="og:locale" content="en_US">
@@ -83,9 +84,9 @@
 }
 </script>
 <style>
-  @font-face { font-family: Fredoka; src: url(assets/fonts/fredoka_bold.ttf) format("truetype"); font-weight: 700; font-display: swap; }
-  @font-face { font-family: Nunito; src: url(assets/fonts/nunito_bold.ttf) format("truetype"); font-weight: 700; font-display: swap; }
-  @font-face { font-family: Nunito; src: url(assets/fonts/nunito_extrabold.ttf) format("truetype"); font-weight: 800; font-display: swap; }
+  /* Latin WOFF2 subsets of the game's fonts (see README); only the 700 weights are used. */
+  @font-face { font-family: Fredoka; src: url(assets/fonts/fredoka_bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: Nunito; src: url(assets/fonts/nunito_bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
   :root {
     --ink: #1E2A4A; --fox: #E8613C; --cream: #FFF4D6; --snow: #F4F8FD; --shade: #DCE5F3;
     --sky1: #27356A; --sky2: #5068A8; --sky3: #A9BCE3; --mint: #8FE6CF; --lilac: #B9A2F2; --muted: #45507A;
@@ -155,7 +156,7 @@
 <header class="sky">
   <div class="wrap hero">
     <div>
-      <div class="brand"><img src="assets/img/icon-256.png" alt="" width="64" height="64"><span>Snowpack Hop</span></div>
+      <div class="brand"><img src="assets/img/icon-128.webp" alt="" width="64" height="64"><span>Snowpack Hop</span></div>
       <h1>Stomp the snow critters. Build your way up.</h1>
       <p class="sub">A one-tap fox platformer for iPhone. Tuck runs on his own. Tap to hop, hold to hop higher, and stomp critters into snow blocks you can climb.</p>
       <p class="soon">Coming soon to the App Store</p>
