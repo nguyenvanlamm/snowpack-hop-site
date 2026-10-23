@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Snowpack Hop: a one-tap fox platformer for iPhone</title>
+<meta name="description" content="Tuck the fox runs on his own through a snowy twilight. Tap to hop, hold to hop higher, and pack every critter you stomp into a snow block you can climb. 36 levels, World 1 free, no ads.">
+<link rel="canonical" href="https://nguyenvanlamm.github.io/snowpack-hop-site/">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Snowpack Hop">
+<meta property="og:description" content="Stomp the snow critters. Build your way up. A one-tap platformer for iPhone.">
+<meta property="og:image" content="https://nguyenvanlamm.github.io/snowpack-hop-site/assets/img/icon-256.png">
+<meta name="theme-color" content="#27356A">
+<style>
+  @font-face { font-family: Fredoka; src: url(assets/fonts/fredoka_bold.ttf) format("truetype"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: Nunito; src: url(assets/fonts/nunito_bold.ttf) format("truetype"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: Nunito; src: url(assets/fonts/nunito_extrabold.ttf) format("truetype"); font-weight: 800; font-display: swap; }
+  :root {
+    --ink: #1E2A4A; --fox: #E8613C; --cream: #FFF4D6; --snow: #F4F8FD; --shade: #DCE5F3;
+    --sky1: #27356A; --sky2: #5068A8; --sky3: #A9BCE3; --mint: #8FE6CF; --lilac: #B9A2F2; --muted: #45507A;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--snow); color: var(--ink); font: 700 17px/1.6 Nunito, system-ui, -apple-system, sans-serif; }
+  h1, h2, h3 { font-family: Fredoka, Nunito, system-ui, sans-serif; line-height: 1.15; margin: 0; }
+  a { color: inherit; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 16px; }
+
+  /* Hero: the banded twilight sky with an aurora ribbon. */
+  .sky { position: relative; overflow: hidden; color: #fff;
+    background: linear-gradient(180deg, var(--sky1) 0%, var(--sky1) 45%, var(--sky2) 45%, var(--sky2) 90%, var(--sky3) 90%); }
+  .sky::before { content: ""; position: absolute; inset: 8% -20% auto -20%; height: 140px; transform: rotate(-8deg);
+    background: linear-gradient(90deg, transparent, var(--mint) 25%, var(--lilac) 70%, transparent); opacity: .55; filter: blur(18px); }
+  .hero { position: relative; display: grid; gap: 32px; padding: 56px 16px 0; grid-template-columns: 1fr; align-items: end; }
+  .hero > div:first-child { padding-bottom: 48px; } /* keeps the white text on the dark bands */
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand img { width: 64px; height: 64px; border-radius: 16px; border: 3px solid var(--ink); }
+  .brand span { font: 700 22px Fredoka, sans-serif; }
+  .hero h1 { font-size: clamp(36px, 7vw, 60px); margin: 22px 0 14px; text-shadow: 0 3px 0 var(--ink); }
+  .hero p.sub { font-size: 19px; max-width: 34em; margin: 0 0 22px; }
+  .soon { display: inline-block; margin: 0; padding: 14px 24px; border-radius: 999px; background: var(--fox); color: #fff;
+    font: 700 20px Fredoka, sans-serif; border: 3px solid var(--ink); box-shadow: 0 5px 0 var(--ink); }
+  .trust { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 18px; padding: 0; margin: 20px 0 0; font-size: 15px; }
+  .trust li::before { content: "❄ "; color: var(--cream); }
+  .phones { display: flex; gap: 14px; justify-content: center; align-items: flex-end; padding-bottom: 0; }
+  .phone { width: 31%; max-width: 230px; border: 4px solid var(--ink); border-bottom: 0; border-radius: 26px 26px 0 0;
+    overflow: hidden; background: var(--ink); line-height: 0; }
+  .phone img { width: 100%; height: auto; display: block; }
+  .phone.tall { max-width: 250px; width: 36%; }
+  .ground { height: 34px; background: var(--snow); border-top: 4px solid var(--ink); border-radius: 50% 50% 0 0 / 30px 30px 0 0; margin-top: -4px; position: relative; }
+
+  section { padding: 56px 0; }
+  section h2 { font-size: clamp(28px, 4.5vw, 38px); margin-bottom: 14px; }
+  .lead { font-size: 19px; max-width: 40em; color: var(--muted); margin: 0 0 28px; }
+  .cards { display: grid; gap: 18px; grid-template-columns: 1fr; }
+  .card { background: #fff; border: 3px solid var(--ink); border-radius: 22px; box-shadow: 0 6px 0 var(--ink); padding: 22px; }
+  .card h3 { font-size: 22px; margin-bottom: 6px; }
+  .card p { margin: 0; color: var(--muted); }
+  .step { display: grid; grid-template-columns: 52px 1fr; gap: 14px; align-items: start; }
+  .num { width: 52px; height: 52px; border-radius: 50%; background: var(--fox); color: #fff; border: 3px solid var(--ink);
+    display: grid; place-items: center; font: 700 24px Fredoka, sans-serif; }
+  .twist { background: var(--shade); border-top: 4px solid var(--ink); border-bottom: 4px solid var(--ink); }
+  .price { display: grid; gap: 18px; grid-template-columns: 1fr; }
+  .price .card b { font: 700 30px Fredoka, sans-serif; display: block; margin: 4px 0 6px; color: var(--ink); }
+  .price .free { background: var(--cream); }
+  .privacy { text-align: center; font-size: 19px; }
+  details { background: #fff; border: 3px solid var(--ink); border-radius: 18px; padding: 16px 20px; margin-bottom: 12px; }
+  summary { cursor: pointer; font: 700 19px Fredoka, sans-serif; }
+  details p { margin: 10px 0 0; color: var(--muted); }
+  footer { background: var(--sky1); color: #fff; padding: 36px 0; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; }
+  footer nav a { margin-right: 20px; }
+  :focus-visible { outline: 3px solid var(--fox); outline-offset: 3px; }
+  @media (min-width: 760px) {
+    .hero { grid-template-columns: 1.05fr 1fr; padding: 72px 16px 0; }
+    .cards { grid-template-columns: repeat(3, 1fr); }
+    .price { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (prefers-reduced-motion: no-preference) { .soon { transition: transform .15s; } }
+</style>
+</head>
+<body>
+<header class="sky">
+  <div class="wrap hero">
+    <div>
+      <div class="brand"><img src="assets/img/icon-256.png" alt="" width="64" height="64"><span>Snowpack Hop</span></div>
+      <h1>Stomp the snow critters. Build your way up.</h1>
+      <p class="sub">Tuck the fox runs on his own through a snowy twilight. Tap to hop, hold to hop higher, and pack every critter you stomp into a snow block you can stand on.</p>
+      <p class="soon">Coming soon to the App Store</p>
+      <ul class="trust" aria-label="At a glance">
+        <li>Free first world</li><li>No ads</li><li>No account</li><li>Plays offline</li>
+      </ul>
+    </div>
+    <div class="phones" aria-label="Screenshots">
+      <div class="phone"><img src="assets/img/home.webp" alt="The trail map of Pinefall with levels up to the cabin" width="390" height="844"></div>
+      <div class="phone tall"><img src="assets/img/game.webp" alt="Tuck standing on a fresh snow block below a wall, with the hint: Stand on a snow block to climb a wall" width="390" height="844"></div>
+      <div class="phone"><img src="assets/img/shop.webp" alt="The shop: All Worlds, Globe Pouch and Globe Chest" width="390" height="844"></div>
+    </div>
+  </div>
+  <div class="ground" aria-hidden="true"></div>
+</header>
+
+<main>
+  <section class="twist">
+    <div class="wrap">
+      <h2>Every critter is a step</h2>
+      <p class="lead">Stomp a frostmite and it packs into a solid block of snow right where it stood. Some walls are too high to jump, so the critters are your stairs.</p>
+      <div class="cards">
+        <div class="card"><h3>Pick your step</h3><p>Choose which critter to stomp and where. A block in the wrong place is a step to nowhere.</p></div>
+        <div class="card"><h3>New tricks each world</h3><p>Waddlers, hoppers that leave blocks in the air, gliders, and spiky critters you cannot stomp at all.</p></div>
+        <div class="card"><h3>Lanterns save your spot</h3><p>Light a lantern on the trail and a fall sends you back there, not to the start.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>How to play</h2>
+      <p class="lead">One thumb, a few minutes a level, a lit cabin at the end.</p>
+      <div class="cards">
+        <div class="card step"><span class="num">1</span><div><h3>Tap to hop</h3><p>Tuck runs on his own. Touch anywhere to jump.</p></div></div>
+        <div class="card step"><span class="num">2</span><div><h3>Hold to go higher</h3><p>Keep your finger down for a longer, higher hop over gaps and ledges.</p></div></div>
+        <div class="card step"><span class="num">3</span><div><h3>Stomp and climb</h3><p>Land on a critter, then use the block it leaves to reach the next ledge.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 0">
+    <div class="wrap">
+      <h2>What you get</h2>
+      <div class="cards">
+        <div class="card"><h3>36 levels, 3 worlds</h3><p>Pinefall, Frostridge and Aurora Peak, each longer and trickier than the last.</p></div>
+        <div class="card"><h3>Three snowflakes a level</h3><p>Reach the cabin, find all three mittens, and finish without a fall.</p></div>
+        <div class="card"><h3>Two helpers</h3><p>A Snow Globe rewinds three seconds after a fall. A Cozy Scarf shields you from one bump. Glints you collect trade for both.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="twist" id="pricing">
+    <div class="wrap">
+      <h2>Fair pricing</h2>
+      <p class="lead">No ads, no subscriptions, no timers.</p>
+      <div class="price">
+        <div class="card free"><h3>World 1</h3><b>Free</b><p>12 levels and every mechanic, to see if you like it.</p></div>
+        <div class="card"><h3>All Worlds</h3><b>$3.99</b><p>One time. Opens Frostridge and Aurora Peak: 24 more levels.</p></div>
+        <div class="card"><h3>Booster packs</h3><b>$0.99 / $2.99</b><p>Optional: 5 or 15 Snow Globes and Cozy Scarves. You can also earn them with glints, so they never block a level.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy">
+    <div class="wrap"><p>No account, no tracking, no analytics. Your progress stays on your phone. <a href="privacy.html">Privacy Policy</a></p></div>
+  </section>
+
+  <section style="padding-top: 0">
+    <div class="wrap">
+      <h2>Questions</h2>
+      <details><summary>Does it work offline?</summary><p>Yes. Every level plays without a connection. The App Store is used only when you buy something or restore a purchase.</p></details>
+      <details><summary>Are there ads?</summary><p>No. There are no ads and no ad networks.</p></details>
+      <details><summary>What does it cost?</summary><p>World 1 is free. All Worlds is a one-time $3.99. Booster packs are optional, and boosters can also be earned in play.</p></details>
+      <details><summary>What data do you collect?</summary><p>None. There is no account, and progress is saved on your device only.</p></details>
+      <details><summary>Which devices?</summary><p>iPhone. It is played in portrait with one hand.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Snowpack Hop · coming soon to the App Store</span>
+    <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>
