@@ -1,0 +1,21 @@
+# Snowpack Hop site: all crawlers welcome, including search and AI bots.
+# GitHub Pages serves this project site under a path; crawlers read only the origin's
+# https://nguyenvanlamm.github.io/robots.txt, which should list this sitemap too.
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://nguyenvanlamm.github.io/snowpack-hop-site/sitemap.xml
